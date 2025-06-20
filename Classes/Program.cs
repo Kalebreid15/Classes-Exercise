@@ -1,29 +1,24 @@
-﻿namespace Classes
+﻿
+using System;
+
+namespace CarExample
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            // Create a new instance of the Car class
             Car myCar = new Car();
-            
-            //Set the object's properties
+
+            // Set values for the properties
             myCar.Make = "Toyota";
             myCar.Model = "Camry";
-            myCar.Year = 2020;
-            
-            //Print the values on the Console
+            myCar.Year = 2022;
+
+            // Print the values to the console
             Console.WriteLine($"Make: {myCar.Make}");
             Console.WriteLine($"Model: {myCar.Model}");
             Console.WriteLine($"Year: {myCar.Year}");
-            
         }
-    }
-
-    public class Car
-    {
-        public string Make { get; set; }
-        public string Model { get; set; }
-        public int Year { get; set; }
-        
     }
 }
